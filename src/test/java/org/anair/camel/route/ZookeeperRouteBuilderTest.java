@@ -43,6 +43,6 @@ public class ZookeeperRouteBuilderTest extends CamelCookbookBaseTest {
 	
 	@Test
 	public void listChildrenZNodes() throws InterruptedException {
-		zookeeperProducer.sendBody("zoo:vrhzoodev01,vrhzoodev02,vrhzoodev03/camel-zoo/app/cluster?listChildren=true", "");
+		zookeeperProducer.sendBody("zoo:zoonode1,zoonode2,zoonode3/camel-zoo/app/cluster?listChildren=true", "");
 	}
 }
