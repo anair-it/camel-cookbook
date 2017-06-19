@@ -1,0 +1,23 @@
+camel:
+  springboot:
+    name: camel-cookbook
+    main-run-controller: true
+
+
+environment: 
+  mq:
+    host: localhost
+    port: 1414
+    queue-manager: QM1
+    channel: TO.QM1
+    username: mqm
+    password: 
+    receive-timeout: 2000
+    queues:
+      camel-in-queue: CAMEL.IN
+      camel-out-queue: CAMEL.OUT
+      dlq: CAMEL.DLQ
+  zookeeper:
+    ensemble: ENTER ZOOKEEPER CONNECTION STRING
+    namespace: /camel-zoo
+    leader-path: /app/leader
