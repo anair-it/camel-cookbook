@@ -26,9 +26,15 @@ Setting up your environment
 
 ### Zookeeper leader election
 
+This recipe covers zookeeper and IBM MQ usage in camel.
+
 1. Open a terminal and run `mvn clean package` and `java -jar target/camel-cookbook.jar`
 2. Open multiple terminals and run `java -jar target/camel-cookbook.jar` to create a cluster connected to a zookeeper ensemble 
 2. Put multiple messages in CAMEL.IN    
 3. Check logs to make sure only node is processing the message
 4. Shutdown one of the camel-cookbook instance
 5. Drop a message again and verify that another node has claimed leadership and processed the message
+
+
+### Hazelcast caching
+The recipe covers putting a snappy compressed data into cache and then retrieving it later. Refer unit tests.

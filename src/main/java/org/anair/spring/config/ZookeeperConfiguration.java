@@ -46,6 +46,4 @@ public class ZookeeperConfiguration {
 	public String hostName() throws UnknownHostException {
 		return InetAddress.getLocalHost().getHostName()+randomNumberGenerator.nextInt(10);
 	}
-
-
 }

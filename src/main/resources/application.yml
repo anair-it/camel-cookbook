@@ -21,3 +21,8 @@ environment:
     ensemble: ENTER ZOOKEEPER CONNECTION STRING
     namespace: /camel-zoo
     leader-path: /app/leader
+  hazelcast:
+    name: camel-hz
+    cluster: localhost
+    port: 5701  
+    
